@@ -1,0 +1,32 @@
+/* Colours Custom CSS */
+:root {
+  --color-black: #222222;
+  --color-white: #ffffff;
+  --color-darker-red: #bd5753;
+  --color-dark-red: #c74e4a;
+  --color-red: #d95450;
+  --color-light-red: #e0746f;
+  --color-grey: #999999;
+  --color-light-grey: #bbbbbb;
+}
+
+/* Standard css for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Standard image sizing */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Basic font implementation will be changed */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 100%;
+}
