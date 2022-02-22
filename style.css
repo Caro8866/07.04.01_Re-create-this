@@ -13,7 +13,7 @@
   --colour-white: #ffffff;
   --colour-header-colour: #531d20;
   --colour-font-colour: #785e60;
-  --colour-pomo-selected: #bd5853;
+  --colour-mode-selected: #bd5853;
   --colour-task-add: #c34c47;
   --colour-header-underline: #f99f9a;
   --colour-font-footer: #785e60;
@@ -51,7 +51,6 @@ h6 {
   font-family: var(--mainFont);
   color: var(--colour-header-colour);
 }
-
 /* Basic font implementation will be changed */
 body {
   margin: 0;
@@ -101,6 +100,44 @@ header a {
 .logo svg {
   width: 18px;
   height: 18px;
+}
+
+/* TIMER FUNCTION SECTION */
+
+#mainTimerFunction {
+  background-color: var(--colour-bg-red);
+  padding-top: 2.4rem;
+}
+
+#mainTimerFunction > * {
+  max-width: 555px;
+  margin: auto;
+}
+
+#timer {
+  background-color: var(--colour-header-link);
+  border-radius: 5px;
+  padding: 1.5rem;
+  align-items: center;
+}
+#modeSelectors {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+button {
+  font-size: 1.15rem;
+  color: var(--colour-white);
+  border: none;
+  border-radius: 4px;
+  background-color: inherit;
+  padding: 0.1rem 0.8rem;
+}
+
+#modeSelectors button:nth-of-type(1) {
+  background-color: var(--colour-mode-selected);
+  font-weight: bold;
 }
 /* ARTICLE */
 article {
