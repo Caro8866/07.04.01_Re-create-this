@@ -233,11 +233,25 @@ button {
 }
 
 .taskCompleted > div > svg {
-  color: var(--colour-subfont-footer);
+  color: var(--colour-bg-red);
 }
 
 .taskCompleted #strike {
   text-decoration: line-through;
+}
+
+#newTask {
+  border: dashed 2px rgba(255, 255, 255, 0.3);
+  background-color: var(--colour-top-underline);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* ARTICLE */
