@@ -11,7 +11,8 @@
   /* Colours */
   --colour-bg-red: #d9564f;
   --colour-white: #ffffff;
-  --colour-font-colour: #531d20;
+  --colour-header-colour: #531d20;
+  --colour-font-colour: #785e60;
   --colour-pomo-selected: #bd5853;
   --colour-task-add: #c34c47;
   --colour-header-underline: #f99f9a;
@@ -37,15 +38,18 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-h1,
+h1 {
+  font-family: var(--mainFont);
+  color: var(--colour-white);
+  font-size: 6.5rem;
+}
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: var(--mainFont);
-  color: var(--colour-font-colour);
+  color: var(--colour-header-colour);
 }
 
 /* Basic font implementation will be changed */
@@ -55,7 +59,7 @@ body {
   height: 100%;
   font-family: var(--mainFont);
   color: var(--colour-font-colour);
-  background-color: var(--colour-bg-red);
+  background-color: var(--colour-white);
 }
 a {
   text-decoration: none;
@@ -63,6 +67,7 @@ a {
 
 /* HEADER STYLING */
 header {
+  background-color: var(--colour-bg-red);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,6 +101,47 @@ header a {
 .logo svg {
   width: 18px;
   height: 18px;
+}
+/* ARTICLE */
+article {
+  max-width: 555px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+article section {
+  margin-bottom: 4rem;
+}
+
+article p {
+  font-size: 1.15rem;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+}
+article h3:after {
+  display: block;
+  height: 4px;
+  width: 1.3rem;
+  content: " ";
+  background-color: var(--colour-header-underline);
+  margin: 0.3rem 0 1rem 0;
+}
+
+article a {
+  color: var(--colour-bg-red);
+  font-weight: bold;
+}
+
+article li {
+  font-size: 1.15rem;
+  margin: 0.8rem 0;
 }
 
 /* FOOTER STYLING */
@@ -148,9 +194,13 @@ footer li {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 630px) {
   /* to hide navigation text */
   header a span {
     display: none;
+  }
+
+  article {
+    width: 90%;
   }
 }
