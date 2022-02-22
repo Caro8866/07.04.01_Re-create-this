@@ -1,0 +1,55 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+/* COULDNT FIND ARIAL ROUND for free */
+
+/* VARIABLES */
+/* Colours Custom CSS */
+:root {
+  /* Font */
+  --mainFont: "Nunito", Arial, Helvetica;
+  --mainFontWeight: "400";
+  /* Colours */
+  --colour-bg-red: #d9564f;
+  --colour-bg-white: #ffffff;
+  --colour-font-colour: #531d20;
+  --colour-pomo-selected: #bd5853;
+  --colour-task-add: #c34c47;
+  --colour-header-underline: #f99f9a;
+  --colour-font-footer: #a19192;
+  --colour-gray: #ececec;
+  /* Padding & Margins */
+}
+/* General CSS Styling*/
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--mainFont);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--mainFont);
+  color: var(--colour-font-colour);
+}
+
+/* Basic font implementation will be changed */
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--mainFont);
+  color: var(--colour-font-colour);
+  background-color: var(--colour-bg-red);
+}
