@@ -228,6 +228,12 @@ button {
   color: var(--colour-subfont-footer);
   border: 1px solid var(--colour-subfont-footer);
 }
+.taskItem > div > svg {
+  color: var(--colour-gray);
+  width: 26px;
+  height: 26px;
+}
+
 .taskCompleted {
   color: var(--colour-subfont-footer);
 }
