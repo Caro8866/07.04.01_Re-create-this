@@ -10,13 +10,16 @@
   --mainFontWeight: "400";
   /* Colours */
   --colour-bg-red: #d9564f;
-  --colour-bg-white: #ffffff;
+  --colour-white: #ffffff;
   --colour-font-colour: #531d20;
   --colour-pomo-selected: #bd5853;
   --colour-task-add: #c34c47;
   --colour-header-underline: #f99f9a;
   --colour-font-footer: #a19192;
   --colour-gray: #ececec;
+  --colour-top-underline: #c54a45;
+  --colour-header-link: #e1716d;
+
   /* Padding & Margins */
 }
 /* General CSS Styling*/
@@ -52,4 +55,51 @@ body {
   font-family: var(--mainFont);
   color: var(--colour-font-colour);
   background-color: var(--colour-bg-red);
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--colour-top-underline);
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+header li {
+  list-style: none;
+  background-color: var(--colour-header-link);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}
+
+header a {
+  color: var(--colour-white);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 620px) {
+  /* to hide navigation text */
+  header a span {
+    display: none;
+  }
 }
