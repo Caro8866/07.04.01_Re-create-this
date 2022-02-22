@@ -254,6 +254,25 @@ button {
   gap: 0.5rem;
 }
 
+#taskOverview {
+  border-top: 1px solid var(--colour-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  margin: 1rem 0 9rem 0;
+  color: var(--colour-white);
+}
+
+#taskOverview ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  list-style: none;
+}
+.number {
+  font-size: 1.5rem;
+}
+
 /* ARTICLE */
 article {
   max-width: 555px;
