@@ -207,6 +207,38 @@ button {
   width: 1.5rem;
   height: 1.5rem;
 }
+.taskItem {
+  background-color: var(--colour-white);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  font-weight: 700;
+}
+.taskItem > div {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.taskItem > div > .toggle {
+  background-color: var(--colour-white);
+  color: var(--colour-subfont-footer);
+  border: 1px solid var(--colour-subfont-footer);
+}
+.taskCompleted {
+  color: var(--colour-subfont-footer);
+}
+
+.taskCompleted > div > svg {
+  color: var(--colour-subfont-footer);
+}
+
+.taskCompleted #strike {
+  text-decoration: line-through;
+}
 
 /* ARTICLE */
 article {
