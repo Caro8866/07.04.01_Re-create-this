@@ -1,5 +1,5 @@
 /* FONT IMPORT */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap");
 /* COULDNT FIND ARIAL ROUND for free */
 
 /* VARIABLES */
@@ -119,6 +119,8 @@ header a {
   border-radius: 5px;
   padding: 1.5rem;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 #modeSelectors {
   display: flex;
@@ -139,6 +141,25 @@ button {
   background-color: var(--colour-mode-selected);
   font-weight: bold;
 }
+#modeSelectors button:hover {
+  background-color: var(--colour-header-underline);
+}
+
+#startBtn {
+  background-color: var(--colour-white);
+  color: var(--colour-bg-red);
+  font-weight: 800;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
+  border-bottom: 7px solid var(--colour-gray);
+}
+/* WOULD HAVE LIKED TO CHANGE THIS TO A ANIMATION WITH BUTTON BEING PRESSED */
+#startBtn:hover {
+  border-bottom: 0 solid var(--colour-gray);
+  padding-bottom: 23px;
+  background-color: var(--colour-gray);
+}
+
 /* ARTICLE */
 article {
   max-width: 555px;
