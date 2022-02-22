@@ -199,7 +199,6 @@ button {
 }
 .toggle {
   background-color: var(--colour-header-link);
-  aspect-ratio: 1/1;
   padding: 0.1rem 0.2rem;
   margin-bottom: 1rem;
 }
@@ -221,12 +220,14 @@ button {
   flex-direction: row;
   gap: 0.8rem;
   align-items: center;
+  margin: 1rem 0;
 }
 
 .taskItem > div > .toggle {
   background-color: var(--colour-white);
   color: var(--colour-subfont-footer);
   border: 1px solid var(--colour-subfont-footer);
+  margin-bottom: 0;
 }
 .taskItem > div > svg {
   color: var(--colour-gray);
